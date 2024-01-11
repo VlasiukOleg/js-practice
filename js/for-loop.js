@@ -23,10 +23,18 @@ const min = 5;
 const max = 10;
 let total = 0;
 
+// for (let i = min; i <= max; i += 1) {
+//   if (i % 2 === 0) {
+//     total += i;
+//   }
+// }
+
 for (let i = min; i <= max; i += 1) {
-  if (i % 2 === 0) {
-    total += i;
+  if (i % 2 !== 0) {
+    continue;
   }
+
+  total += i;
 }
 
 console.log(total);
