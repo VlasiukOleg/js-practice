@@ -129,3 +129,29 @@
 // }
 
 // console.log(total);
+
+// ! Работаем с коллекцией карточек в treelo
+
+const cards = ['Card-1', 'Card-2', 'Card-3', 'Card-4', 'Card-5'];
+
+// Видалення по індексу, метод indexOf()
+
+// const cardToRemove = 'Card-3';
+
+// const removeCardIndex = cards.indexOf(cardToRemove);
+
+// console.log(cardIndex);
+
+// cards.splice(2, 1);
+
+// console.log(cards);
+
+// Додавання по індексу
+
+const cardToInsert = 'Card-6';
+
+const index = 3;
+
+cards.splice(3, 0, cardToInsert);
+
+console.log(cards);
