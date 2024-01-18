@@ -119,3 +119,60 @@
 // const ascedingScores = [...scores].sort((a, b) => a - b);
 
 // console.log(ascedingScores);
+
+// TODO
+
+// const tweets = [
+//   { id: '000', likes: 5, tags: ['js', 'nodejs'] },
+//   { id: '001', likes: 2, tags: ['html', 'css'] },
+//   { id: '002', likes: 25, tags: ['html', 'js', 'nodejs'] },
+//   { id: '003', likes: 8, tags: ['css', 'react'] },
+//   { id: '004', likes: 0, tags: ['js', 'nodejs', 'react'] },
+// ];
+
+// const allTags = tweets.reduce((tags, tweet) => {
+//   tags.push(...tweet.tags);
+
+//   return tags;
+// }, []);
+
+// console.log(allTags);
+
+// const tagsStats = allTags.reduce((acc, tag) => {
+//   return {
+//     ...acc,
+//     [tag]: acc[tag] ? (acc[tag] += 1) : 1,
+//   };
+// }, {});
+
+// console.log(tagsStats);
+
+// TODO Кастомная сортировка сложных типов
+
+const students = [
+  { name: 'Манго', score: 83 },
+  { name: 'Полі', score: 59 },
+  { name: 'Аякс', score: 37 },
+  { name: 'Ківі', score: 94 },
+  { name: "Х'юстон", score: 64 },
+];
+
+const sortedByScore = [...students].sort((a, b) => {
+  return b.score - a.score;
+});
+
+console.log(sortedByScore);
+
+const byName = [...students].sort((a, b) => {
+  const result = a.name[0] > b.name[0];
+
+  if (result) {
+    return 1;
+  }
+
+  if (!result) {
+    return -1;
+  }
+});
+
+console.log(byName);
