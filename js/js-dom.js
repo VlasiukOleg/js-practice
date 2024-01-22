@@ -33,8 +33,26 @@
 
 // !Дата атрибуты
 
-const btnList = document.querySelector('.btn-list');
+// const btnList = document.querySelector('.btn-list');
 
-const actions = document.querySelectorAll('.btn-list button');
+// const actions = document.querySelectorAll('.btn-list button');
 
-console.log(actions[1].dataset.action);
+// console.log(actions[1].dataset.action);
+
+// ! ClassList
+
+// const siteNavLink = document.querySelector('.site-nav-link');
+
+// console.log(siteNavLink);
+
+// const currentPage = '/home';
+
+// siteNavLink.classList.add('new-class');
+// siteNavLink.classList.remove('new-class');
+// console.log(siteNavLink.classList.contains('new-class'));
+
+// const currentLink = document.querySelector(`.site-nav-link[href='${currentPage}']`);
+
+// console.log(currentLink);
+
+// currentLink.classList.add('site-nav-link--current');
