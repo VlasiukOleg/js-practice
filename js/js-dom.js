@@ -56,3 +56,68 @@
 // console.log(currentLink);
 
 // currentLink.classList.add('site-nav-link--current');
+
+// ! Создание елементов
+
+// ? Добавляем пункт меню
+
+// const siteNavItem = document.createElement('li');
+// siteNavItem.classList.add('site-nav-item');
+
+// console.log(siteNavItem);
+
+// const siteNavLink = document.createElement('a');
+// siteNavLink.classList.add('site-nav-link');
+// siteNavLink.textContent = 'LogIn';
+// siteNavLink.href = '/login';
+
+// console.log(siteNavLink);
+
+// const siteNavList = document.querySelector('.site-nav-list');
+
+// siteNavItem.appendChild(siteNavLink);
+// siteNavList.appendChild(siteNavItem);
+
+// ! Создаем коллекцию элементов колорпикер
+
+// const colorPickerEl = document.querySelector('.js-color-picker');
+
+// const colorPickerOptions = [
+//   { label: 'Red', color: '#FF0000' },
+//   { label: 'Green', color: '#00FF00' },
+//   { label: 'Blue', color: '#0000FF' },
+//   { label: 'Yellow', color: '#FFFF00' },
+//   { label: 'Purple', color: '#800080' },
+// ];
+
+// const btnElements = [];
+
+// colorPickerOptions.map(option => {
+//   const element = document.createElement('button');
+//   element.type = 'button';
+//   element.textContent = option.label;
+//   element.style.backgroundColor = option.color;
+
+//   return btnElements.push(element);
+// });
+
+// console.log(btnElements);
+
+// colorPickerEl.append(...btnElements);
+
+// ? Напишемо функцію для створення розмітки
+
+// const makeColorPickerMarkUp = options => {
+//   return options.map(option => {
+//     const btnEl = document.createElement('button');
+//     btnEl.type = 'button';
+//     btnEl.textContent = option.label;
+//     btnEl.style.backgroundColor = option.color;
+
+//     return btnEl;
+//   });
+// };
+
+// const elements = makeColorPickerMarkUp(colorPickerOptions);
+
+// colorPickerEl.append(...elements);
