@@ -2,6 +2,10 @@
   color: orangered;
 }
 
+ul {
+  list-style: none;
+}
+
 /* Modal Events */
 
 .backdrop {
@@ -36,4 +40,27 @@
   opacity: 1;
   visibility: visible;
   pointer-events: all;
+}
+
+/* Delegations */
+
+.tags-list {
+  display: flex;
+  gap: 10px;
+}
+
+.tags-btn {
+  display: inline-block;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 10px 20px;
+  outline: none;
+
+  cursor: pointer;
+}
+
+.tags-btn--current {
+  background-color: skyblue;
+  color: white;
 }
