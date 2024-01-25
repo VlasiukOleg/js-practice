@@ -64,3 +64,17 @@ ul {
   background-color: skyblue;
   color: white;
 }
+
+/* Chatty Events */
+
+/* Filter */
+
+.technology-wrap {
+  max-width: 800px;
+  padding: 15px;
+  margin: 0 auto;
+}
+
+.technology-item {
+  margin-bottom: 5px;
+}
