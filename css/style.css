@@ -1,3 +1,7 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 .site-nav-link--current {
   color: orangered;
 }
@@ -77,4 +81,25 @@ ul {
 
 .technology-item {
   margin-bottom: 5px;
+}
+
+/* Notification */
+
+.alert {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  display: inline-block;
+  padding: 30px;
+
+  background-color: green;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 250ms linear;
+}
+
+.alert.is-visible {
+  opacity: 1;
 }
