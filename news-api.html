@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Events</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <section class="container news-api">
+      <h1>News Api</h1>
+      <form class="search-form">
+        <input type="text" name="query" class="search-form__input" />
+        <button type="submit" class="search-form__btn">Find News</button>
+      </form>
+      <ul class="news-api__list"></ul>
+      <button type="submit" class="news-api__btn news-api__btn--is-hidden search-form__btn">
+        Show more
+      </button>
+    </section>
+    <script src="./js/fetch-api.js" type="module"></script>
+  </body>
+</html>
