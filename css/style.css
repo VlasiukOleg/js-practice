@@ -165,10 +165,8 @@ img {
   margin-bottom: 20px;
 }
 
-.thumb {
-  width: 250px;
-  height: 120px;
-  overflow: hidden;
+.news-api__item {
+  flex-basis: calc((100% - 20px) / 3);
 }
 
 .news-api__btn--is-hidden {
